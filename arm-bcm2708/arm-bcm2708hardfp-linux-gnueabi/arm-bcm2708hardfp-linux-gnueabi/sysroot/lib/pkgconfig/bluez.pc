@@ -1,0 +1,10 @@
+prefix=/opt/raspberrypi/toolchain/arm-bcm2708/arm-bcm2708hardfp-linux-gnueabi/arm-bcm2708hardfp-linux-gnueabi
+exec_prefix=${prefix}
+libdir=/opt/raspberrypi/toolchain/arm-bcm2708/arm-bcm2708hardfp-linux-gnueabi/arm-bcm2708hardfp-linux-gnueabi/lib
+includedir=${prefix}/include
+ 
+Name: BlueZ
+Description: Bluetooth protocol stack for Linux
+Version: 3.36
+Libs: -L${libdir} -lbluetooth
+Cflags: -I${includedir}
